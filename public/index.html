@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4f46e5">
+  <title>AI Sana Challenge Hub — Бизнес идеядан нақты тапсырмаға</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="AI Sana Challenge Hub — басты бет">
+        <span class="brand-mark" aria-hidden="true">ai<span>✦</span></span>
+        <span>AI Sana <span class="brand-secondary">Challenge Hub</span></span>
+      </a>
+      <span class="event-label">HackAlem AI <span class="badge">2026</span></span>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <section class="intro" aria-labelledby="page-title">
+      <span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> БИЗНЕС ПЕН ИННОВАЦИЯ КЕЗДЕСЕТІН ОРТА</span>
+      <h1 id="page-title">Идеяңыздан <span>нақты тапсырмаға.</span></h1>
+      <p>Бизнес мәселеңізді сипаттаңыз. AI жетіспейтін ақпаратты анықтап,<br class="desktop-break"> командаға түсінікті тапсырма дайындауға көмектеседі.</p>
+    </section>
+
+    <ol class="steps" aria-label="Тапсырма дайындау кезеңдері">
+      <li class="step-current" aria-current="step"><span class="step-number">01</span><span>Мәселені сипаттау</span></li>
+      <li><span class="step-number">02</span><span>Ақпаратты нақтылау</span></li>
+      <li><span class="step-number">03</span><span>Тапсырма карточкасы</span></li>
+    </ol>
+
+    <div class="content-grid">
+      <div class="main-column">
+        <section class="panel description-panel" aria-labelledby="description-title">
+          <div class="section-heading">
+            <span class="section-icon" aria-hidden="true">✎</span>
+            <div><h2 id="description-title">Бизнес тапсырмасын сипаттаңыз</h2><p>Алғашқы қадам — шешкіңіз келетін мәселені бөлісу.</p></div>
+          </div>
+          <form id="task-form" novalidate>
+            <div class="field">
+              <label for="industry">Бизнес саласы <span class="required">*</span></label>
+              <select id="industry" name="industry" required aria-describedby="industry-error">
+                <option value="">Саланы таңдаңыз</option>
+                <option value="education">Білім беру</option>
+                <option value="healthcare">Денсаулық сақтау</option>
+                <option value="retail">Сауда және e-commerce</option>
+                <option value="finance">Қаржы</option>
+                <option value="agriculture">Ауыл шаруашылығы</option>
+                <option value="logistics">Көлік және логистика</option>
+                <option value="services">Қызмет көрсету</option>
+                <option value="other">Басқа сала</option>
+              </select>
+              <p class="field-error" id="industry-error" hidden>Бизнес саласын таңдаңыз.</p>
+            </div>
+            <div class="field">
+              <label for="description">Тапсырма сипаттамасы <span class="required">*</span></label>
+              <textarea id="description" name="description" rows="6" required aria-describedby="description-hint description-error" placeholder="Мысалы, дүкенімізге клиенттерден көп сұрақ келеді. Жиі қойылатын сұрақтарға жауап беруді автоматтандырғымыз келеді, бірақ неден бастарымызды білмейміз..."></textarea>
+              <p class="field-hint" id="description-hint">Идея толық болмаса да болады. Нақтылауға көмектесеміз.</p>
+              <p class="field-error" id="description-error" hidden>Тапсырма сипаттамасын енгізіңіз.</p>
+            </div>
+            <div class="form-footer">
+              <span class="demo-label"><span aria-hidden="true">◈</span> Демо режим · 1-кезең</span>
+              <button type="submit"><span aria-hidden="true">✦</span> AI арқылы талдау <span aria-hidden="true">→</span></button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel questions-panel" aria-labelledby="questions-title">
+          <div class="section-heading">
+            <span class="section-icon" aria-hidden="true">?</span>
+            <div><h2 id="questions-title">Нақтылаушы сұрақтар</h2><p>Дұрыс сұрақтар — сапалы тапсырманың негізі.</p></div>
+          </div>
+          <div id="questions-empty" class="empty-state">
+            <span class="empty-symbol" aria-hidden="true">…</span>
+            <h3>Алдымен мәселеңізді сипаттаңыз</h3>
+            <p>Талдаудан кейін осы жерде нақтылаушы сұрақтар пайда болады.</p>
+          </div>
+          <div id="questions-content" hidden>
+            <p class="demo-notice">Бұл — тестілік сұрақтар. Жауаптардан карточка жасау келесі кезеңде қосылады.</p>
+            <ol id="questions-list" class="questions-list"></ol>
+          </div>
+          <p id="analysis-status" class="sr-only" role="status" aria-live="polite"></p>
+        </section>
+      </div>
+
+      <aside class="side-column" aria-label="Тапсырманың дайындық күйі">
+        <section class="panel rating-panel" aria-labelledby="rating-title">
+          <div class="compact-heading"><h2 id="rating-title">Дайындық рейтингі</h2><span class="small-dot" aria-hidden="true"></span></div>
+          <div class="rating-circle" role="meter" aria-label="Тапсырманың дайындық рейтингі" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div><strong>0<span>/100</span></strong><span class="rating-caption">дайындық деңгейі</span></div>
+          </div>
+          <span class="neutral-badge">Әзірге бағаланбаған</span>
+          <p class="rating-note">Тапсырма нақтыланған сайын оның дайындық деңгейі көрсетіледі.</p>
+          <div class="rating-footnote"><span aria-hidden="true">ⓘ</span><p>Осы демо кезеңінде рейтинг <strong>0/100</strong> болып қалады.</p></div>
+        </section>
+
+        <section class="panel task-card-panel" aria-labelledby="card-title">
+          <div class="compact-heading"><h2 id="card-title">Тапсырма карточкасы</h2><span class="card-tag">TASK CARD</span></div>
+          <div class="card-placeholder">
+            <span class="document-symbol" aria-hidden="true"><span></span><span></span><span></span></span>
+            <h3>Болашақ шешім осы жерден басталады</h3>
+            <p>Нақтылау аяқталған соң тапсырма карточкасы осы жерде пайда болады.</p>
+          </div>
+          <div class="upcoming-label">Келесі кезеңде қолжетімді</div>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="page-footer"><span>AI Sana Challenge Hub</span><span>Бизнес мәселесі → Нақты сұрақтар → Айқын тапсырма</span></footer>
+  </main>
+</body>
+</html>

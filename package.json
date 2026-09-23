@@ -1,0 +1,25 @@
+{
+  "name": "hack-438cc0d4-kazakh-alem-ai",
+  "version": "1.0.0",
+  "description": "Hackathon team repository for KAZAKH ALEM AI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BAITC-Hacks/hack-438cc0d4-kazakh-alem-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BAITC-Hacks/hack-438cc0d4-kazakh-alem-ai/issues"
+  },
+  "homepage": "https://github.com/BAITC-Hacks/hack-438cc0d4-kazakh-alem-ai#readme",
+  "dependencies": {
+    "dotenv": "^18.0.3",
+    "express": "^5.2.1",
+    "openai": "^7.23.0"
+  }
+}
