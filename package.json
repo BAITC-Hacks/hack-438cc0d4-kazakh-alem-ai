@@ -2,9 +2,10 @@
   "name": "hack-438cc0d4-kazakh-alem-ai",
   "version": "1.0.0",
   "description": "Hackathon team repository for KAZAKH ALEM AI",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
   },
   "repository": {
     "type": "git",

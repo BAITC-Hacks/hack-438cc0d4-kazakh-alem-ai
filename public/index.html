@@ -4,32 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#4f46e5">
-  <title>AI Sana Challenge Hub — Бизнес идеядан нақты тапсырмаға</title>
+  <title data-i18n="AI Sana Challenge Hub — Бизнес идеядан нақты тапсырмаға">AI Sana Challenge Hub — Бизнес идеядан нақты тапсырмаға</title>
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="index.html" aria-label="AI Sana Challenge Hub — басты бет">
+      <a class="brand" href="index.html" aria-label="AI Sana Challenge Hub — басты бет" data-i18n-label="AI Sana Challenge Hub — басты бет">
         <span class="brand-mark" aria-hidden="true">ai<span>✦</span></span>
         <span>AI Sana <span class="brand-secondary">Challenge Hub</span></span>
       </a>
-      <span class="event-label">HackAlem AI <span class="badge">2026</span></span>
+      <div class="header-actions"><span class="event-label">HackAlem AI <span class="badge">2026</span></span><div class="language-control"><label for="language" data-i18n="Тіл">Тіл</label><select id="language" name="language"><option value="kk" lang="kk">Қазақша</option><option value="ru" lang="ru">Русский</option><option value="en" lang="en">English</option></select></div></div>
     </div>
   </header>
 
   <main class="workspace">
     <section class="intro" aria-labelledby="page-title">
-      <span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> БИЗНЕС ПЕН ИННОВАЦИЯ КЕЗДЕСЕТІН ОРТА</span>
-      <h1 id="page-title">Идеяңыздан <span>нақты тапсырмаға.</span></h1>
-      <p>Бизнес мәселеңізді сипаттаңыз. AI жетіспейтін ақпаратты анықтап,<br class="desktop-break"> командаға түсінікті тапсырма дайындауға көмектеседі.</p>
+      <span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> <span data-i18n="БИЗНЕС ПЕН ИННОВАЦИЯ КЕЗДЕСЕТІН ОРТА">БИЗНЕС ПЕН ИННОВАЦИЯ КЕЗДЕСЕТІН ОРТА</span></span>
+      <h1 id="page-title"><span class="hero-start" data-i18n="Идеяңыздан">Идеяңыздан</span> <span data-i18n="нақты тапсырмаға.">нақты тапсырмаға.</span></h1>
+      <p data-i18n="Бизнес мәселеңізді сипаттаңыз. AI жетіспейтін ақпаратты анықтап, командаға түсінікті тапсырма дайындауға көмектеседі.">Бизнес мәселеңізді сипаттаңыз. AI жетіспейтін ақпаратты анықтап, командаға түсінікті тапсырма дайындауға көмектеседі.</p>
+      <p id="ai-mode" class="connection-status" role="status"></p>
     </section>
 
-    <ol class="steps" aria-label="Тапсырма дайындау кезеңдері">
-      <li class="step-current" aria-current="step"><span class="step-number">01</span><span>Мәселені сипаттау</span></li>
-      <li><span class="step-number">02</span><span>Ақпаратты нақтылау</span></li>
-      <li><span class="step-number">03</span><span>Тапсырма карточкасы</span></li>
+    <ol class="steps" aria-label="Тапсырма дайындау кезеңдері" data-i18n-label="Тапсырма дайындау кезеңдері">
+      <li class="step-current" aria-current="step"><span class="step-number">01</span><span data-i18n="Мәселені сипаттау">Мәселені сипаттау</span></li>
+      <li><span class="step-number">02</span><span data-i18n="Ақпаратты нақтылау">Ақпаратты нақтылау</span></li>
+      <li><span class="step-number">03</span><span data-i18n="Тапсырма карточкасы">Тапсырма карточкасы</span></li>
     </ol>
 
     <div class="content-grid">
@@ -37,33 +38,33 @@
         <section class="panel description-panel" aria-labelledby="description-title">
           <div class="section-heading">
             <span class="section-icon" aria-hidden="true">✎</span>
-            <div><h2 id="description-title">Бизнес тапсырмасын сипаттаңыз</h2><p>Алғашқы қадам — шешкіңіз келетін мәселені бөлісу.</p></div>
+            <div><h2 id="description-title" data-i18n="Бизнес тапсырмасын сипаттаңыз">Бизнес тапсырмасын сипаттаңыз</h2><p data-i18n="Алғашқы қадам — шешкіңіз келетін мәселені бөлісу.">Алғашқы қадам — шешкіңіз келетін мәселені бөлісу.</p></div>
           </div>
           <form id="task-form" novalidate>
             <div class="field">
-              <label for="industry">Бизнес саласы <span class="required">*</span></label>
+              <label for="industry"><span data-i18n="Бизнес саласы">Бизнес саласы</span> <span class="required">*</span></label>
               <select id="industry" name="industry" required aria-describedby="industry-error">
-                <option value="">Саланы таңдаңыз</option>
-                <option value="education">Білім беру</option>
-                <option value="healthcare">Денсаулық сақтау</option>
-                <option value="retail">Сауда және e-commerce</option>
-                <option value="finance">Қаржы</option>
-                <option value="agriculture">Ауыл шаруашылығы</option>
-                <option value="logistics">Көлік және логистика</option>
-                <option value="services">Қызмет көрсету</option>
-                <option value="other">Басқа сала</option>
+                <option value="" data-i18n="Саланы таңдаңыз">Саланы таңдаңыз</option>
+                <option value="education" data-i18n="Білім беру">Білім беру</option>
+                <option value="healthcare" data-i18n="Денсаулық сақтау">Денсаулық сақтау</option>
+                <option value="retail" data-i18n="Сауда және e-commerce">Сауда және e-commerce</option>
+                <option value="finance" data-i18n="Қаржы">Қаржы</option>
+                <option value="agriculture" data-i18n="Ауыл шаруашылығы">Ауыл шаруашылығы</option>
+                <option value="logistics" data-i18n="Көлік және логистика">Көлік және логистика</option>
+                <option value="services" data-i18n="Қызмет көрсету">Қызмет көрсету</option>
+                <option value="other" data-i18n="Басқа сала">Басқа сала</option>
               </select>
-              <p class="field-error" id="industry-error" hidden>Бизнес саласын таңдаңыз.</p>
+              <p class="field-error" id="industry-error" hidden data-i18n="Бизнес саласын таңдаңыз.">Бизнес саласын таңдаңыз.</p>
             </div>
             <div class="field">
-              <label for="description">Тапсырма сипаттамасы <span class="required">*</span></label>
-              <textarea id="description" name="description" rows="6" required aria-describedby="description-hint description-error" placeholder="Мысалы, дүкенімізге клиенттерден көп сұрақ келеді. Жиі қойылатын сұрақтарға жауап беруді автоматтандырғымыз келеді, бірақ неден бастарымызды білмейміз..."></textarea>
-              <p class="field-hint" id="description-hint">Идея толық болмаса да болады. Нақтылауға көмектесеміз.</p>
-              <p class="field-error" id="description-error" hidden>Тапсырма сипаттамасын енгізіңіз.</p>
+              <label for="description"><span data-i18n="Тапсырма сипаттамасы">Тапсырма сипаттамасы</span> <span class="required">*</span></label>
+              <textarea id="description" name="description" maxlength="5000" rows="6" required aria-describedby="description-hint description-error" placeholder="Мысалы, дүкенімізге клиенттерден көп сұрақ келеді. Жиі қойылатын сұрақтарға жауап беруді автоматтандырғымыз келеді, бірақ неден бастарымызды білмейміз..." data-i18n-placeholder="Мысалы, дүкенімізге клиенттерден көп сұрақ келеді. Жиі қойылатын сұрақтарға жауап беруді автоматтандырғымыз келеді, бірақ неден бастарымызды білмейміз..."></textarea>
+              <p class="field-hint" id="description-hint" data-i18n="Идея толық болмаса да болады. Нақтылауға көмектесеміз.">Идея толық болмаса да болады. Нақтылауға көмектесеміз.</p>
+              <p class="field-error" id="description-error" hidden data-i18n="Тапсырма сипаттамасын енгізіңіз.">Тапсырма сипаттамасын енгізіңіз.</p>
             </div>
             <div class="form-footer">
-              <span class="demo-label"><span aria-hidden="true">◈</span> Демо режим · 1-кезең</span>
-              <button type="submit"><span aria-hidden="true">✦</span> AI арқылы талдау <span aria-hidden="true">→</span></button>
+              <span class="demo-label"><span aria-hidden="true">◈</span> <span data-i18n="AI агент · OpenAI">AI агент · OpenAI</span></span>
+              <button type="submit"><span aria-hidden="true">✦</span> <span data-i18n="AI арқылы талдау">AI арқылы талдау</span> <span aria-hidden="true">→</span></button>
             </div>
           </form>
         </section>
@@ -71,45 +72,62 @@
         <section class="panel questions-panel" aria-labelledby="questions-title">
           <div class="section-heading">
             <span class="section-icon" aria-hidden="true">?</span>
-            <div><h2 id="questions-title">Нақтылаушы сұрақтар</h2><p>Дұрыс сұрақтар — сапалы тапсырманың негізі.</p></div>
+            <div><h2 id="questions-title" data-i18n="Нақтылаушы сұрақтар">Нақтылаушы сұрақтар</h2><p data-i18n="Дұрыс сұрақтар — сапалы тапсырманың негізі.">Дұрыс сұрақтар — сапалы тапсырманың негізі.</p></div>
           </div>
           <div id="questions-empty" class="empty-state">
             <span class="empty-symbol" aria-hidden="true">…</span>
-            <h3>Алдымен мәселеңізді сипаттаңыз</h3>
-            <p>Талдаудан кейін осы жерде нақтылаушы сұрақтар пайда болады.</p>
+            <h3 data-i18n="Алдымен мәселеңізді сипаттаңыз">Алдымен мәселеңізді сипаттаңыз</h3>
+            <p data-i18n="Талдаудан кейін осы жерде нақтылаушы сұрақтар пайда болады.">Талдаудан кейін осы жерде нақтылаушы сұрақтар пайда болады.</p>
           </div>
-          <div id="questions-content" hidden>
-            <p class="demo-notice">Бұл — тестілік сұрақтар. Жауаптардан карточка жасау келесі кезеңде қосылады.</p>
+          <form id="questions-content" hidden novalidate>
+            <p class="demo-notice" data-i18n="Барлық сұраққа жауап беріңіз. Жауаптардан өңделетін карточка жасалады. Бетті жаңартқанда деректер өшеді.">Барлық сұраққа жауап беріңіз. Жауаптардан өңделетін карточка жасалады. Бетті жаңартқанда деректер өшеді.</p>
+            <p id="language-note" class="demo-notice" hidden data-i18n="AI мәтіні бастапқы тілде сақталды. Жаңа тілде сұрақтар алу үшін қайта талдаңыз.">AI мәтіні бастапқы тілде сақталды. Жаңа тілде сұрақтар алу үшін қайта талдаңыз.</p>
             <ol id="questions-list" class="questions-list"></ol>
-          </div>
-          <p id="analysis-status" class="sr-only" role="status" aria-live="polite"></p>
+            <div class="form-footer">
+              <p id="answers-status" class="field-hint" role="status"></p>
+              <button type="submit"><span data-i18n="Жауаптарды сақтау">Жауаптарды сақтау</span> <span aria-hidden="true">→</span></button>
+            </div>
+          </form>
+          <p id="analysis-status" class="field-hint" role="status" aria-live="polite"></p>
         </section>
       </div>
 
-      <aside class="side-column" aria-label="Тапсырманың дайындық күйі">
+      <aside class="side-column" aria-label="Тапсырманың дайындық күйі" data-i18n-label="Тапсырманың дайындық күйі">
         <section class="panel rating-panel" aria-labelledby="rating-title">
-          <div class="compact-heading"><h2 id="rating-title">Дайындық рейтингі</h2><span class="small-dot" aria-hidden="true"></span></div>
-          <div class="rating-circle" role="meter" aria-label="Тапсырманың дайындық рейтингі" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-            <div><strong>0<span>/100</span></strong><span class="rating-caption">дайындық деңгейі</span></div>
+          <div class="compact-heading"><h2 id="rating-title" data-i18n="Дайындық рейтингі">Дайындық рейтингі</h2><span class="small-dot" aria-hidden="true"></span></div>
+          <div class="rating-circle" role="meter" aria-label="Тапсырманың дайындық рейтингі" data-i18n-label="Тапсырманың дайындық рейтингі" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div><strong><b id="rating-score">0</b><span>/100</span></strong><span class="rating-caption" data-i18n="дайындық деңгейі">дайындық деңгейі</span></div>
           </div>
-          <span class="neutral-badge">Әзірге бағаланбаған</span>
-          <p class="rating-note">Тапсырма нақтыланған сайын оның дайындық деңгейі көрсетіледі.</p>
-          <div class="rating-footnote"><span aria-hidden="true">ⓘ</span><p>Осы демо кезеңінде рейтинг <strong>0/100</strong> болып қалады.</p></div>
-        </section>
-
-        <section class="panel task-card-panel" aria-labelledby="card-title">
-          <div class="compact-heading"><h2 id="card-title">Тапсырма карточкасы</h2><span class="card-tag">TASK CARD</span></div>
-          <div class="card-placeholder">
-            <span class="document-symbol" aria-hidden="true"><span></span><span></span><span></span></span>
-            <h3>Болашақ шешім осы жерден басталады</h3>
-            <p>Нақтылау аяқталған соң тапсырма карточкасы осы жерде пайда болады.</p>
+          <span id="rating-level" class="neutral-badge" role="status" data-i18n="Әзірге бағаланбаған">Әзірге бағаланбаған</span>
+          <progress id="rating-progress" value="0" max="100" aria-label="Тапсырманың дайындық деңгейі" data-i18n-label="Тапсырманың дайындық деңгейі">0/100</progress>
+          <p class="rating-note" data-i18n="Карточка жасалғанда тестілік баға: 65/100.">Карточка жасалғанда тестілік баға: 65/100.</p>
+          <div class="missing-fields">
+            <h3 data-i18n="Толтырылмаған өрістер">Толтырылмаған өрістер</h3>
+            <p id="missing-placeholder" class="field-hint" data-i18n="Алдымен сұрақтарға жауап беріңіз.">Алдымен сұрақтарға жауап беріңіз.</p>
+            <ul id="missing-fields" hidden></ul>
           </div>
-          <div class="upcoming-label">Келесі кезеңде қолжетімді</div>
+          <div class="rating-footnote"><span aria-hidden="true">ⓘ</span><p data-i18n="65 — тұрақты демо баға, AI бағалауы емес. Бос өрістер тізімі өңдеу кезінде жаңарады.">65 — тұрақты демо баға, AI бағалауы емес. Бос өрістер тізімі өңдеу кезінде жаңарады.</p></div>
         </section>
       </aside>
+        <section class="panel task-card-panel" aria-labelledby="card-title">
+          <div class="compact-heading"><h2 id="card-title" data-i18n="Тапсырма карточкасы">Тапсырма карточкасы</h2><span class="card-tag">TASK CARD</span></div>
+          <div id="card-empty" class="card-placeholder">
+            <span class="document-symbol" aria-hidden="true"><span></span><span></span><span></span></span>
+            <h3 data-i18n="Болашақ шешім осы жерден басталады">Болашақ шешім осы жерден басталады</h3>
+            <p data-i18n="Нақтылау аяқталған соң тапсырма карточкасы осы жерде пайда болады.">Нақтылау аяқталған соң тапсырма карточкасы осы жерде пайда болады.</p>
+          </div>
+          <form id="card-form" hidden novalidate>
+            <p class="demo-notice" data-i18n="Барлық өрісті өңдеуге болады. Жарияламас бұрын мәліметтердің дұрыстығын тексеріңіз.">Барлық өрісті өңдеуге болады. Жарияламас бұрын мәліметтердің дұрыстығын тексеріңіз.</p>
+            <div id="card-fields" class="card-fields"></div>
+            <div class="form-footer">
+              <p id="card-status" class="field-hint" role="status" data-i18n="Карточка жобасы дайын.">Карточка жобасы дайын.</p>
+              <button id="confirm-card" type="submit" data-i18n="Карточканы растау">Карточканы растау</button>
+            </div>
+          </form>
+        </section>
     </div>
 
-    <footer class="page-footer"><span>AI Sana Challenge Hub</span><span>Бизнес мәселесі → Нақты сұрақтар → Айқын тапсырма</span></footer>
+    <footer class="page-footer"><span>AI Sana Challenge Hub</span><span data-i18n="Бизнес мәселесі → Нақты сұрақтар → Айқын тапсырма">Бизнес мәселесі → Нақты сұрақтар → Айқын тапсырма</span></footer>
   </main>
 </body>
 </html>
